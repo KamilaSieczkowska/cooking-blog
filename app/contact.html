@@ -5,20 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Strona z przepisami">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <link href="https://fonts.googleapis.com/css?family=Istok+Web|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="images/favicons/manifest.json">
-	<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="theme-color" content="#ffffff">
-    
+
 	<title> Od kuchni - przepiśnik </title>
 </head>
 
@@ -27,13 +20,13 @@
  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-         		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            <a class="navbar-brand" href="#"> <i class="glyphicon glyphicon-home"></i></a>
+            <a class="navbar-brand" href="index.html"> <i class="glyphicon glyphicon-home"></i></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
@@ -48,7 +41,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="contact.html"> Kontakt <i class="glyphicon glyphicon-envelope"></i> </a>
+                    <a class="active" href="contact.html"> Kontakt <i class="glyphicon glyphicon-envelope"></i> </a>
                 </li>
             </ul>
             <form class="navbar-form navbar-right">
@@ -65,77 +58,32 @@
     </div>
 </nav>
 
-
-<div class="header">
-    <div id="logo" class="container">
-        Od kuchni
-    </div>
+<div id="bg">
 </div>
 
-<section class="container">
+<div id="form">
 
-	<div class="row">
-	<div class="col-lg-10">
+   <form action="" method="post" id="contactform">
+   <h3> Masz do mnie jakieś pytania? </h3>
+    <fieldset>
+        <p>
+            Podaj swoje imię: <input type="text" name="contact_name" placeholder="Imię" required="required">
+        </p>
+        <p>
+            Podaj swój adres e-mail: <input type="email" name="contact_email" placeholder="Adres e-mail" required="required">
+        </p>
+        <p>
+            <textarea rows="10" cols="80" name="contact_body" placeholder="Treść wiadomości" required="required"></textarea>
+        </p>
+        <p>
+            <input type="submit" class="btn btn-success" value="Wyślij">
+        </p>
+    </fieldset>
 
-    <article>
-        <h1> Z miłości do jedzenia... </h1>
+</form>
 
-        Niektórzy ludzie traktują jedzenie jako codzienny obowiązek - dla mnie jest to sens życia ;) <br>
-        To miejsce jest zbiorem moich ulubionych przepisów. Niektóre są stare jak świat i pochodzą jeszcze z notesików babci, inne to znalezione w sieci wynalazki. Jedne są zdrowe, fit i superhealthy, inne to kaloryczne bomby. Staram się jeść świadomie, patrzę na skład produktów, w myśl zasadzie "jesteś tym, co jesz"... ale gdyby to była prawda, już dawno byłabym m&#38;m'sem.
 
-    </article>
-
-    <div class="meals">
-	   <div>
-		<a href="breakfasts.html">
-		  <div id="breakfast">
-            <p> Śniadania </p>
-		  </div>
-		</a>
-
-		<a href="breakfasts.html">
-		  <div id="lunch">
-            <p> Lunche </p>
-		  </div>
-		</a>
-
-		<a href="breakfasts.html">
-		  <div id="dinner">
-            <p> Obiady </p>
-		  </div>  
-		</a>
-
-		<a href="breakfasts.html">
-		  <div id="supper"> 
-            <p> Kolacje </p>
-		  </div>
-		</a>
-
-		<a href="breakfasts.html">
-		  <div id="soup"> 
-            <p> Zupy </p>
-		  </div>
-		</a>
-
-		<a href="breakfasts.html">
-		  <div id="sweets"> 
-            <p> Słodkości </p>
-		  </div>
-		 </a>
-	</div>
-
-    </div>
-    </div>
-
-	<div class="col-md-2">
-        <div id="about">
-            <img src="images/kamila.png">
-            <h3 style="color: darkred"> O mnie </h3>
-                Lorem ipsum sit dolorem ipsum sit dolorem ipsum sit dolorem ipsum sit dolorem ipsum sit dolorem
-        </div>
-    </div>
-
-</section>
+</div>
 
 <hr>
 
